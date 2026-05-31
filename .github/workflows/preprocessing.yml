@@ -15,6 +15,10 @@ jobs:
   run-preprocessing:
     runs-on: ubuntu-latest
     
+    # PERBAIKAN: Menambahkan hak akses write untuk bot agar bisa push
+    permissions:
+      contents: write
+      
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
